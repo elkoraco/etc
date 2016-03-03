@@ -1,0 +1,1003 @@
+rmv openresolv
+vim /etc/dhcpcd.conf
+vim /etc/resolv.conf
+ping www.google.com
+journalctl
+iw list
+ifconfig
+pacman -Ss ifconfig
+pacman -Ss iw
+ip list
+ip help
+ip
+ip -d
+ip addr
+ip link
+ip -s
+ip addr
+ip link
+ip enp2s0
+man ip
+man netctl
+netctl list
+cd /etc/netctl
+ls
+cd interfaces
+ls
+la
+..
+rmv networkmanager
+rmv dhclient
+rmv wpa_supplicant
+tune2fs -l /dev/sdXY | grep "Default mount options:"
+tune2fs -l /dev/sda2 | grep "Default mount options:"
+systemctl enable minidlna.service
+cat /etc/sys
+cat /etc/systemd/system/multi-user.target.wants/minidlna.service
+systemctl disable minidlna.service
+cd /usr/share/applications
+ls
+vim epiphany.desktop
+rmv claws-mail
+pacman -Rs claws-mail
+vim .zshrc
+vim .oh-my-zsh/custom/aliases.zsh
+syu
+cd /etc/netctl
+ls
+cd examples
+ls
+less ethernet-custom
+less ethernet-static
+..
+ls
+vim static
+ls
+systemctl stop dhcpcd@enp2s0.service
+ping www.google.com
+killall dhcpcd
+ping www.google.hr
+systemctl status dhclient@.service
+systemctl status dhclient.service
+ls
+cd interfaces
+ls
+..
+cd hooks
+ls
+..
+ls
+systemctl start dhcpcd@enp2s0.service
+systemctl stop dhcpcd@enp2s0.service
+systemctl status dhcpcd@enp2s0.service
+ping www.google.hr
+systemctl start dhcpcd@enp2s0.service
+ip addr
+cd /etc/netctl
+ls
+cd interfaces
+ls
+vim static
+ls
+..
+ls
+mv interfaces/static .
+ls
+cd examples
+cat ethernet-static
+systemctl disable dhcpcd@enp2s0.service
+reboot
+netctl start static
+ping www.google.hr
+netctl enable static
+reboot
+ls
+syu
+vim /etc/netctlstatic
+vim /etc/netctl/static
+netctl reenable static
+ping www.google.hr
+reboot
+vim /boot/loader/entries/arch.conf
+reboot
+vim /boot/loader/entries/arch.conf
+cat /etc/resolv.conf
+cd /etc/systemd/network
+ls
+vim static.network
+systemctl restart systemd-networkd.service
+cat /etc/resolv.conf
+ping www.google.hr
+systemctl start systemd-resolved.service
+ping www.google.hr
+systemctl enable systemd-resolved.service
+reboot
+vim /etc/resolv.conf
+ping www.google.hr
+cat /etc/resolv.conf
+vim /etc/resolv.conf
+systemctl daemon-reload
+ping www.google.com
+vim /etc/systemd/network/static.network
+man resolved.conf
+vim /etc/systemd/resolved.conf
+reboot
+cd /etc/systemd/network
+vim static.network
+systemctl status systemd-networkd.service
+systemctl status systemd-networkd.service -l
+ping www.google.hr
+cd /run/systemd/resolve
+cat resolv.conf
+cd /etc
+rm resolv.conf
+ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
+reboot
+cat /etc/resolv.conf
+cd systemd-resolve
+ls
+cd etc/systemd
+ls
+vim resolved.conf
+..
+cd systemd
+cd network
+ls
+vim static.network
+rmv gnome-terminal-dark-variant
+in gnome-terminal
+cd /etc
+la
+blkid
+cat /etc/fstab
+vim /etc/fstab
+gedit /etc/fstab
+timedatactl
+in ntp
+systemctl enable ntpd.service
+reboot
+timedatectl
+rmv ntp
+systemctl mask ntpd.service
+systemctl stop ntpd.service
+rmv ntp
+pacman -R ntp
+timedatectl status
+timedatectl set-ntp true
+cd /etc
+la localtime
+hwclock --systohc --utc
+systemd-analyze
+systemd-analyze blame
+journalctl -xb
+ls
+la
+man systemd
+man resolved.conf
+rmv gnome-terminal
+ls
+la
+man systemd
+cd /usr/share/themes
+ls
+cd Adwaita
+ls
+cd gtk-3.0
+ls
+less gtk.css
+..
+cd Default
+ls
+cd gtk-3.0
+ls
+less gtk-keys.css
+..
+ls
+..
+cd gnome-shell
+ls
+cd theme
+ls
+..
+systemd-analyze 
+cd
+ls
+cp /home/elkoraco/.Xresources .Xresources
+xrdb -merge .Xresources
+vim /etc/pulse/daemon.conf
+reboot
+vim .oh-my-zsh/custom/aliases.zsh
+cgdisk /dev/sda
+in gptfdisk
+cgdisk /dev/sda
+lsblk
+efibootmgr -v
+vim /boot/loader/loader.conf
+efibootmgr -v
+vim /boot/loader/loader.conf
+sc analyze
+systemctl analyze
+systemd-analyze
+rmv gnome-terminal
+rmv xterm
+man resolved.conf
+su -
+vim .zshrc
+vim .Xresources
+xrdb -merge .Xresources
+systemd-analyze
+cd /usr/share
+ls
+la
+syu
+cd /usr/share/applications
+ls
+vim epiphany.desktop
+cd /usr/share/applications
+vim epiphany.desktop
+rmv xterm
+less /etc/resolv.conf.bak
+rm /etc/resolv.conf
+systemctl disable systemd-networkd.service
+systemctl disable systemd-resolved.service
+reboot
+netctl enable static
+netctl start static
+ping www.google.hr
+cd /etc
+less resolv.conf
+vim resolv.conf
+rm resolv.conf
+vim resolv.conf
+ping www.google.hr
+systemd-analyze
+systemd-analyze blame
+systemd-analyze
+reboot
+cd /etc/netctl
+ls
+less static
+vim static
+cd /etc/systemd
+cd network
+ls
+vim static.network
+netctl disable static
+sc enable systemd-networkd
+reboot
+networkctl status -a 
+networkctl
+man networkctl
+networkctl status
+cd /etc
+vim resolv.conf
+ping www.google.hr
+vim resolv.conf
+ping www.google.hr
+in qutebrowser
+rmv qutebrowser
+vim /etc/pacman.conf
+pacman-key -r 962DDE58
+dirmngr
+vim /etc/pacman.conf
+pacman -Syuu
+vim /etc/fonts/local.conf
+vim /etc/pacman.conf
+pacman-key -r 962DDE58
+pacman-key --lsign-key 962DDE58\
+
+pacman -Syyu
+in infinality-bundle/
+in infinality-bundle
+fc-presets help
+fc-presets
+fc-presets set
+rmv infinality-bundle
+in freetype2 fontcongig cairo
+in freetype2 fontconfig cairo
+cd /etc/fonts
+ls
+cd conf.avail
+ls
+..
+cd conf.d
+ls
+less README
+..
+rm -rf conf.d
+rm -rf conf.avail
+mv bakup_normalni local.confx
+mv local.confx local.conf
+cd /etc/fonts
+ls
+less fonts.conf
+fc-cache
+vim local.conf
+in freetype
+in freetype2
+in libcairo
+in cairo
+cd /etc/fonts
+ls
+mkdir -p conf.d
+mv local.conf conf.d/99-user.conf
+ls
+less fonts.dtd
+rm fonts.dtd
+less fonts.conf
+rm fonts.conf
+cd /usr/share/fonts
+ls
+cd TTF
+ls
+..
+ls
+cd cantarell
+ls
+..
+cd util
+ls
+mv /etc/fonts/conf.d/99-user.conf /etc/fonts/stari
+fc-cache
+fc-cache --help
+mv
+mv /etc/fonts/stari /etc/fonts/local.conf
+fc-preset
+fc-cache
+fc-cache -f
+fc-cache -r
+in fontconfig
+fc-cache
+cd /etc
+cd fonts
+ls
+less local.conf
+vim /etc/pacman.conf
+pacman -Syyu
+sc disable systemd-networkd-wait-online.service
+vim cake.vim
+cp /home/elkoraco/.vimrc /etc/vimrc
+vim .Xresources
+cd /usr/share/vim/vim74/colors
+ls
+vim rakr-light.vim
+vim /etc/vimrc
+rm rakr-light.vim
+vim rakr-light.vim
+vim /etc/vimrc
+rm /etc/vimrc
+vim /etc/vimrc
+vim rakr-light.vim
+mv /home/elkoraco/.vimrc /etc/vimrc
+vim /etc/vimrc
+cd /etc/skel
+ls
+mv /etc/vimrc .
+ls
+vim /etc/skel/vimrc
+mv /etc/skel/vimrc /etc/vimrc
+vim /etc/vimrc
+rm mirrorbak
+rm mirrorlist.backup
+mv mirrorlist.pacnew mirrorlist.bakcup
+mv mirrorlist mirbak
+vim mirrorlist.bakcup
+mv mirrorlist.bakcup mirrorlist.backup
+rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
+less mirrorlist
+pacman -Syyu
+rm solarized.vim
+rm rakr-light.vim
+rm cake.vim
+vim sky.vim
+rm sky.vim
+vim sky.vim
+vim /etc/vimrc
+parted /dev/sda
+sensors-detect
+sensors
+inxi -F
+cat /sys/block/sdX/queue/scheduler
+cat /sys/block/sda/queue/scheduler
+echo # echo noop > /sys/block/sda/queue/scheduler\
+
+vim /sys/block/sda/queue/scheduler
+echo noop > /sys/block/sda/queue/scheduler\
+
+cat /sys/block/sda/queue/scheduler
+vim /boot/loader/entries/arch.conf
+bootctl
+bootctlhelp
+bootctl --help
+bootctl --help status
+bootctl status
+cat /etc/fstab
+vim /boot/loader/entries/arch.conf
+bootctl
+vim /boot/loader/entries/arch.conf
+vim /etc/mkinitcpio.conf
+mkinitcpio -p linux
+vim /etc/mkinitcpio.conf
+mkinitcpio -p linux
+vim /etc/mkinitcpio.conf
+mkinitcpio -p linux
+syu
+blkid
+vim /boot/loader/entries/arch.conf
+reboot
+vim /boot/loader/entries/arch.conf
+mkinitcpio -p linux
+reboot
+systemctl hibernate
+vim /boot/loader/entries/arch.conf
+vim /usr/share/applications/gnome-music.desktop
+rmv sonata
+efibootmgr -d /dev/sda -p /boot -c -L "Arch Linux" -l /vmlinuz-linux -u "root=/dev/sda2 rw initrd=/initramfs-linux.img acpi_backlight=vendor"
+efibootmgr -d /dev/sda -p /dev/sda1 -c -L "Arch Linux" -l /vmlinuz-linux -u "root=/dev/sda2 rw initrd=/initramfs-linux.img acpi_backlight=vendor"
+efibootmgr -d /dev/sda -p boot -c -L "Arch Linux" -l /vmlinuz-linux -u "root=/dev/sda2 rw initrd=/initramfs-linux.img acpi_backlight=vendor"
+efibootmgr -d /dev/sda -p 1 -c -L "Arch Linux" -l /vmlinuz-linux -u "root=/dev/sda2 rw initrd=/initramfs-linux.img acpi_backlight=vendor"
+efibootmgr -v
+reboot
+bootctl install
+reboot
+bootctl update
+vim /boot/loader/entries/arch.conf
+vim /boot/loader/loader.conf
+reboot
+vim /boot/loader/loader.conf
+reboot
+vim /boot/loader/loader.conf
+efibootmgr -d /dev/sda -p 1 -c -L "Arch Linux" -l /vmlinuz-linux -u "root=/dev/sda2 rw initrd=/initramfs-linux.img acpi_backlight=vendor"
+efibootmgr -v
+reboot
+bootctl install
+vim /boot/loader/loader.conf
+reboot
+vim /boot/loader/loader.conf
+poweroff
+efibootmgr -v
+efibootmgr --help
+vim /boot/loader/loader.conf
+man loader.conf
+efibootmgr
+efibootmgr -v
+reboot
+bootctl install
+bootctl update
+reboot
+vim /etc/mkinitcpio.conf
+syu
+less .oh-my-zsh/themes/simple.zsh-theme
+cd .cache
+ls
+cd
+vim .zshrc
+cd .oh-my-zsh
+ls
+cd lib
+ls
+less directories.zsh
+less history.zsh
+less functions.zsh
+less key-bindings.zsh
+less completion.zsh
+less nvm.zsh
+less directories.zsh
+less correction.zsh
+less completion.zsh
+less misc.zsh
+less compfix.zsh
+less functions.zsh
+less theme-and-appearance.zsh
+Äƒ­ess correction.zsh
+less correction.zsh
+less history.zsh
+less key-bindings.zsh
+less spectrum.zsh
+cd
+cp /home/elkoraco/.zshrc .zshrc
+ls
+pwd
+vim .zshrc
+ls
+cd .
+cd .oh-my-zsh
+ls
+cd lib
+ls
+..
+cd templates
+ls
+..
+cd tools
+ls
+..
+clear
+ls
+vim .zshrc
+cat .oh-my-zsh/themes/kolo.zsh-theme
+ls
+cd .cache
+ls
+cd
+vim .zshrc
+rm -rf .oh-my-zsh
+rm .zsh-update
+ls
+la
+syu
+vim /etc/hosts
+vim /boot/loader/entries/arch.conf
+vim /boot/loader/loader.conf
+reboot
+cat brightness
+vim /boot/loader/loader.conf
+vim /boot/loader/entries/arch.conf
+cd /etc/X11/xorg.conf.d
+ls
+less 00-keyboard.conf
+vim 20-intel.conf
+reboot
+cp /etc/X11/xorg.conf.d/20-intel.conf /usr/share/X11/xorg.conf.d
+rm /etc/X11/xorg.conf.d/20-intel.conf
+reboot
+vim /boot/loader/entries/arch.conf
+reboot
+rm /usr/share/X11/xorg.conf.d/20-intel.conf
+vim /boot/loader/entries/arch.conf
+reboot
+cd /usr/share/applications
+vim gnome-music
+vim gnome-music.desktop
+networkctl help
+networkctl --help
+networkctl list
+networkctl status 
+networkctl lldp 
+networkctl status 
+networkctl list
+networkctl status 2 
+cd /etc/systemd/network
+ls
+less static.network
+man systemd-networkd
+man systemd.network
+syu
+vim .zshrc
+syyu
+pacman -Syyu
+vim .zshrc
+ls
+cd /etc/systemd/network
+vim .zshrc
+vim /boot/loader/entries/arch.conf
+cd /etc/X11/xorg.conf.d
+vim 20-intel.conf
+reboot
+cd /sys/class/backlight
+ls
+cd acpi_video0
+less brightness
+echo 18 > brightness
+less brightness
+vim /etc/X11/xorg.conf.d/20-intel.conf
+vim /boot/loader/entries/arch.conf
+vim /boot/loader/loader.conf
+reboot
+vim /boot/loader/entries/arch.conf
+reboot
+vim /boot/loader/entries/arch.conf
+reboot
+vim /boot/loader/entries/arch.conf
+reboot
+vim /boot/loader/entries/arch.conf
+reboot
+vim /boot/loader/entries/arch.conf
+rm /etc/X11/xorg.conf.d/20-intel.conf
+reboot
+paccache -ruk0
+paccache -r
+df -h
+pacman -Sc
+df -h
+syu
+vim .zshrc
+ls
+pacman -Sw linux
+cd /var/cache/pacman/pkg
+ls
+vim /usr/share/vim/vim74/colors/vizuki.vim
+vim /etc/vimrc
+vim /etc/makepkg.conf
+syu
+cd /etc/fonts
+ls
+rm liberation
+ls
+cd conf.avail
+ls
+less 10-autohint.conf
+..
+less local.conf
+cd conf.avail
+vim 10-autohint.conf
+less 50-user.conf
+..
+vim /etc/pacman.conf
+pacman -Syyu
+pacman -S infinality-bundle
+mv /etc/fonts/local.conf arimo
+reboot
+fc-presets set free
+fc-presets set 
+man fontconfig
+man infinality
+cd /etc/fonts
+ls
+cd conf.avail.infinality
+ls
+less 49-sansserif.conf
+less 95-reject.conf
+cd free
+ls
+less 3
+less 30-metric-aliases-free.conf
+..
+cd ms
+ls
+less 30-metric-aliases-ms.conf
+..
+ls
+cd combi
+ls
+less 30-metric-aliases-combi.conf
+..
+clear
+ls
+less 49-sansserif.conf
+less 67-override-aliases.conf
+less 68-override.conf
+less 90-tt-fonts-microsoft.conf
+less 93-final-rendering.conf
+vim /etc/pacman.conf
+pacman -Syyu
+in infinality-bundle-fonts/
+in infinality-bundle-fonts/ttf-ubuntu-font-family-ib
+in infinality-bundle-fonts/ttf-liberation-ib
+in infinality-bundle-fonts/ttf-croscore-fonts-ibx
+in infinality-bundle-fonts/otf-noto-fonts-cjk-ib
+in infinality-bundle-fonts/t1-urw-fonts-ib
+in infinality-bundle-fonts/ttf-caladea-ib
+cd /home/elkoraco/builds
+lÄƒ­s
+ls
+cd ttf-caladea
+ls
+rmv ttf-caladea
+..
+cd ttf-carlito
+ls
+rm ttf-carlito
+rmv ttf-
+rmv ttf-carlito
+in infinality-bundle-fonts/ttf-caladea-ib
+in infinality-bundle-fonts/ttf-carlito-ib 
+ls
+..
+ls
+cd /etc/fonts
+ls
+cd conf.avail.infinality
+ls
+cd free
+ls
+vim 60-latin-free.conf 
+..
+cd combi
+ls
+..
+ls
+vim 29-local.conf
+ls
+vim 10-base-rendering.conf
+cd combi
+cd /etc/fonts
+ls
+cd conf.avail.infinality
+ls
+vim 10-base-rendering.conf
+reboot
+vim /etc/fonts/conf.avail.infinality/10-base-rendering.conf
+vim /etc/nsswitch.conf
+sc daemon-reload
+sc restart avahi-daemon.service
+sc restart avahi-dnsconfd.service
+ping pienusac
+sc status avahi-daemon.service
+sc status avahi-daemon.service -l
+vim /etc/nsswitch.conf
+sc restart avahi-dnsconfd.service
+sc restart avahi-daemon.service
+sc status avahi-daemon.service -l
+vim /boot/loader/loader.conf
+in linux-lts 
+in linux-headers
+in linux-lts
+cp /boot/loader/entries/arch.conf lts.conf
+mv lts.conf /boot/loader/entries
+cd /boot/loader/entries
+ls
+vim lts.conf
+..
+ls
+vim loader/entries/lts.conf
+df -h /boot
+uname -a
+cd loader
+reboot
+cd /boot
+cd loader
+vim loader.conf
+reboot
+fc-cache -fv
+syu
+cd /etc/systemd
+ls
+less resolved.conf
+less resolved.conf.pacnew
+rm resolved.conf
+mv resolved.conf.pacnew resolved.conf
+man systemd
+mkinitcpio -p linux
+reboot
+cd /boot
+vim loader/loader.conf
+reboot
+cd /boot
+vim loader/loader.conf
+reboot
+cd /boot
+vim loader/loader.conf
+reboot
+bootctl update
+efibootmgr -v
+vim loader/loader.conf
+vim /boot/loader/loader.conf
+reboot
+cd /boot
+vim loader/loader.conf
+bootctl update
+efibootmgr - -v
+vim loader/loader.conf
+efibootmgr - -v
+bootctl update
+efibootmgr - -v
+vim loader/loader.conf
+bootctl update
+reboot
+efibootmgr - -v
+efibootmgr -v
+bootctl update
+efibootmgr -v
+vim /boot/loader/loader.conf
+reboot
+efibootmgr -v
+vim /boot/loader/loader.conf
+bootctl update
+efibootmgr -v
+reboot
+efibootmgr -v
+vim /boot/loader/loader.conf
+reboot
+efibootmgr -v
+bootctl update
+efibootmgr -v
+bootctl update
+efibootmgr -v
+man efibootmgr
+efibootmgr
+efibootmgr -v
+man efibootmgr
+clear
+syu
+pacman -Sc
+df -h
+man efibootmgr
+efibootmgr -d /dev/sda -p 1 2 -c -L "Arch Linux" -l /vmlinuz-linux -u "root=/dev/sda2 rw initrd=/intel-ucode.img initrd=/initramfs-linux.img acpi_backlight=vendor"
+reboot
+efibootmgr -d /dev/sda -p 2 -c -L "Arch Linux" -l /vmlinuz-linux -u "root=/dev/sda2 rw initrd=/intel-ucode.img initrd=/initramfs-linux.img acpi_backlight=vendor"
+bootctl update
+efibootmgr -v
+efibootmgr -v -o 0001,0000
+reboot
+efibootmgr -v
+bootctl install
+bootctl update
+efibootmgr -v
+reboot
+efibootmgr -v
+bootctl update
+efibootmgr -v
+reboot
+efibootmgr -v
+vim /etc/nsswitch.conf
+sc restart avahi-daemon.service
+sc restart avahi-dnsconfd.service
+ping pienusac
+ping www.google.com
+ systool -m i915 -av
+syu
+bootctl update
+efibootmgr -v
+sc daemon-reload
+sc daemon-reexec
+ls
+sl 
+ls
+la
+rm arimo
+mkinitcpio -p linux
+reboot
+efibootmgr -O
+efibootmgr -v
+bootctl update
+efibootmgr -v
+reboot
+efibootmgr -v
+bootctl update
+syu
+lshw
+clear
+lshw
+sc status systemd-networkd
+vim /boot/loader/loader.conf
+cd /boot/loader
+cd entries
+vim arch.conf
+..
+vim loader.conf
+reboot
+cd /boot/loader
+cd entries
+ls
+vim arch.conf
+vim arch-fallback.conf
+vim lts.conf
+vim arch.conf
+cd
+vim /etc/adobe/mms.cfg
+mkinitcpio -p linux
+lshw | grap cpu
+lshw | grep cpu
+syu
+in gvfs-mtp
+cd /boot
+cd loader
+cd entries
+cp arch.conf back
+vim arch.conf
+mkinitcpio -p linux
+reboot
+cd /boot
+cd loader/entries
+mv back arch.conf
+reboot
+syu
+sc stop gdm
+sc start lightdm.service
+sc stop gdm.service
+sc stop lightdm.service
+cd /etc/pacman.d
+ls
+rm mirbak mirrorlist.backup
+cp mirrorlist back
+vim back
+rm back
+ls
+vim mirrorlist
+syu
+pacman -Syyu
+cd /etc/pacman.d
+vim back
+sed -i 's/^#Server/Server/' back
+rankmirrors -n 6 /etc/pacman.d/back > bak
+less back
+less bak
+less mirrorlist
+less bak
+mv bak mirrorlist
+ls
+vim mirrorlist
+pacman -Syyu
+bootctl update
+efibootmgr -v
+man efibootmgr
+efibootmgr -A 0000
+syu
+fc-presets set 
+vim /etc/resolv.dnsmasq.conf
+vim /etc/dnsmasq.conf
+vim /etc/resolv.conf
+sc start dnsmasq.service
+ping www.google.com
+ping www.google.hr
+pin www.index.hr
+ping www.index.hr
+sc status dnsmasq.service
+sc restart dnsmasq.service
+sc status dnsmasq.service
+ping www.google.hr
+vim /etc/dnsmasq.conf
+sc restart dnsmasq.service
+ping www.google.hr
+sc status dnsmasq.service
+ping www.google.hr
+ping 8.8.8.8
+syu
+reboot
+in iputils
+ping 8.8.8.8
+ping -4 8.8.8.8
+vim /etc/dnsmasq.conf
+sc restart dnsmasq.service
+sc status dnsmasq.service
+ping -c2 www.google.hr
+ping -2 www.google.hr
+ping -4 www.google.hr
+vim .zshrc
+cd /var/cache/pacman/pkg
+ls
+pacman -U iputils-20140519.fad11dc-1-x86_64.pkg.tar.xz
+ping www.google.com
+syu
+ping www.google.com
+sc stop dnsmasq.service
+vim /etc/resolv.conf
+ping www.google.com
+vim /etc/resolv.conf
+sc start dnsmasq.service
+ping www.google.com
+ping -4 www.google.com
+vim /etc/nsswitch.conf
+sc restart avahi-daemon.service
+sc restart avahi-dnsconfd.service
+vim /etc/nsswitch.conf
+sc disable avahi-daemon.service
+reboot
+vim /boot/loader/entries/arch.conf
+reboot
+vim /etc/resolv.dnsmasq.conf
+ping -4 www.google.com
+ping -4 index.hr
+ping -4 vlada.hr
+ping -4 dedoimedo.com
+vim /etc/resolv.dnsmasq.conf
+ping -4 vlada.hr
+vim /etc/resolv.dnsmasq.conf
+ping -4 dedoimedo.com
+vim /etc/resolv.dnsmasq.conf
+ping -4 index.hr
+vim /etc/resolv.dnsmasq.conf
+vim /etc/dnsmasq.conf
+syu
+cd /etc/pacman.d
+ls
+vim mirrorlist.pacnew
+rankmirrors -n 6 /etc/pacman.d/mirrorlist.pacnew mirrorlist
+vim mirrorlist
+ls
+rm mirrorlist.pacnew
+ls
+rm back
+ls
+pacman -Syyu
+etckeeper init
+parted help
+parted /dev/sda
+sgdisk /dev/sda
+gdisk /dev/sda
+gptfdisk /dev/sda
+in gptfdisk
+fdisk /dev/sda
+gptdisk /dev/sda
+cgdisk /dev/sda
