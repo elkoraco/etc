@@ -4,3 +4,4 @@ Name=enp2s0
 [Network]
 Address=192.168.0.11/24
 Gateway=192.168.0.1
+IPv6AcceptRouterAdvertisements=false
