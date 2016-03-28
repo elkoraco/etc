@@ -1,0 +1,6 @@
+Server = http://mirror.flipez.de/archlinux/$repo/os/$arch
+Server = http://archlinux.cu.be/$repo/os/$arch
+Server = http://archlinux.iskon.hr/$repo/os/$arch
+Server = http://mirrors.nic.cz/archlinux/$repo/os/$arch
+Server = http://ftp.fau.de/archlinux/$repo/os/$arch
+Server = http://mirror.metalgamer.eu/archlinux/$repo/os/$arch
